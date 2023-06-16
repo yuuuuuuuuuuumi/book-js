@@ -18,7 +18,7 @@
 <main>
 <div class="container">
 <section>
-    <p id="choice">ここに日時を表示します</p>
+    <p id="choice">ゲームの進行はコンソールで確認</p>
 </section>
 </div><!-- /.container -->
 </main>
@@ -29,7 +29,16 @@
 </footer>
 <script>
 'use strict';
-console.log(document.getElementById('choice'));
+//ifを使ってみる
+
+if (window.confirm('ゲームスタート！準備はいい？')) {
+    window.alert('スタート');
+} else {
+    window.alert('キャンセル');
+}
+
+
+//console.log(window.confirm('ゲームスタート！準備はいい？'));
 </script>
 </body>
 </html>
