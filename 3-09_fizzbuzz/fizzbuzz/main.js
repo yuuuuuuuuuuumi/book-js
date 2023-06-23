@@ -9,16 +9,18 @@ console.log('test')
 
 '*/
 
-function fizzbuzz(num) {
+function FizzBuzz(num) {
     if (num % 3 === 0 && num % 5 === 0) {
-        return 'fizzbuzz';
+        return 'FizzBuzz!';
     } else if (num % 3 === 0) {
-        return 'fizz';
+        return 'Fizz!';
     } else if (num % 5 === 0) {
-        return 'buzz';
+        return 'Buzz!';
     } else {
         return num;
     }
 }
 
-console.log(fizzbuzz(1));
+console.log(FizzBuzz(5));
+
+//何が出てくる?
