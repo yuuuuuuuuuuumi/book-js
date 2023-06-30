@@ -21,6 +21,14 @@ function FizzBuzz(num) {
     }
 }
 
-console.log(FizzBuzz(5));
+console.log(FizzBuzz(15));
 
 //何が出てくる?
+
+let i = 1;
+while (i <= 10000) {
+    console.log(FizzBuzz(i))
+    i += 1;
+}
+
+//[++],[+=]どちらでもOK!
